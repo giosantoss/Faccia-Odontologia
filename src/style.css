@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*===================== Variables ====================*/
+:root{
+    --color-bg: #ffffff;
+    --color-bg-variant: #fff5e2;
+    --color-primary: #A38454;
+    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+
+    --transition: all 400ms ease;
+}
+
+/*===================== Classes ====================*/
+#root{
+    margin-top: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url(assets/marmore.png);
+    background-color: rgb(73, 73, 73);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+
+p{
+    text-align: justify;
+    text-indent: 25px;
+    padding: 0 30px;
+}
+
+main{
+    background-color: rgba(179, 179, 179, 0.3);
+    width: 85vw;
+    margin: auto;
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.308);
+}
+
+.container{
+    background-color: rgba(179, 179, 179, 0.3);
+    width: 85vw;
+    margin: auto;
+    backdrop-filter: blur(12px);
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.308);
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+
+
+
+a{
+    transition: var(--transition);
+    align-items: center;
+}
+
+a:hover{
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*===================== Responsive for Medium ====================*/
+@media screen and (max-width: 1024px){
+    #root{
+        margin-top: 0px;
+    }
+
+    p{
+        text-align: justify;
+        text-indent: 25px;
+        padding: 0 15px;
+    }
+}
+
+/*===================== Responsive for Small ====================*/
+@media screen and (max-width: 500px){
+    #root{
+        margin-top: 65px;
+    }
+}

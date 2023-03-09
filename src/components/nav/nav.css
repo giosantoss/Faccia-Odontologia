@@ -1,0 +1,18 @@
+/*a{
+    color: #A38454;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+a>span{
+    color: #ECEDEA;
+}
+a>svg{
+    margin-bottom: -2px;
+}*/

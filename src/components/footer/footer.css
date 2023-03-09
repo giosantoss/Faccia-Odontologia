@@ -1,0 +1,56 @@
+#footer{
+    background-color: #0f0e0cde;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    box-shadow: inset 2px 2px 25px rgba(0, 0, 0, 0.801);
+}
+
+h2{
+    color: #ECEDEA;
+}
+
+h2>span{
+    color: var(--color-primary);
+}
+
+ul{
+    color: #ECEDEA;
+}
+
+.adress{
+    color: #ECEDEA;
+}
+
+ul a{
+    color: #ECEDEA;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+ul a>span{
+    height: 16px;
+}
+
+/*===================== Responsive for Medium ====================*/
+@media screen and (max-width: 1024px){
+    
+}
+
+/*===================== Responsive for Small ====================*/
+@media screen and (max-width: 550px){
+    #footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .contact{
+        width: 238.4px;
+    }
+}
